@@ -6,7 +6,10 @@ body {
   header {
     background-image: linear-gradient(to right, #007bff, #0056b3);
   }
-  
+
+  .fotoPerfil{
+    border-radius: 5em !important;
+  }
   section {
     padding-top: 60px;
   }
