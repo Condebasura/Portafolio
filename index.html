@@ -6,6 +6,7 @@
   <title>Mi Portafolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">MiPortafolio</a>
+      <a class="navbar-brand" href="#">Mi Portafolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,10 +29,13 @@
   </nav>
 
   <!-- Hero -->
-  <header class="bg-primary text-white text-center  py-5 mt-5">
+  <header class="bg-primary text-white d-md-flex d-lg-flex  text-center  justify-content-center py-5 mt-5">
+    <div class="container col-md-2 col-lg-2 justify-content-center  img">
+
       <img src="img/foto_perfil.jpg" class="fotoPerfil" style="width: 100px; height: 100px;" alt="">
-      <div class="container  ">
-      <h1 class="display-4" >Hola, soy Pablo Zabala  <p class="lead">Desarrollador Web Fullstack</p></h1>
+    </div>
+      <div class="container col-md-8 col-lg-10">
+      <h1 class="display-4 " >Hola, soy Pablo Zabala  <p class="lead">Desarrollador Web Fullstack</p></h1>
       
     </div>
   </header>
@@ -40,34 +44,55 @@
   <section id="sobre-mi" class="py-5">
     <div class="container">
       <h2 class="text-center  link-success">Sobre mí</h2>
-      <h5>Soy un desarrollador con experiencia en HTML, CSS, bootstrap, JavaScript, Node.js, Express ,SQLite y git.  Actualmente estoy reforzando mis conocimientos en servicios en la nube, trabajando con instancias desde CloudShell y PuTTY, además de herramientas como Apache2 y entornos Linux.</h5>
+      <h5 >Soy un desarrollador con experiencia en HTML, CSS, bootstrap, JavaScript, Node.js, Express ,SQLite y git.  Actualmente estoy reforzando mis conocimientos en servicios en la nube, trabajando con instancias desde CloudShell y PuTTY, además de herramientas como Apache2 y entornos Linux.</h5>
+    </div>
+    <div class="card-body d-flex flex-wrap justify-content-center">
+      <i class="devicon-html5-plain tech-icon colored" title="HTML5"></i>
+      <i class="devicon-css3-plain tech-icon colored" title="CSS3"></i>
+      <i class="devicon-javascript-plain tech-icon colored" title="JavaScript"></i>
+      <i class="devicon-bootstrap-plain tech-icon colored" title="Bootstrap"></i>
+      <i class="devicon-nodejs-plain tech-icon colored" title="Node.js"></i>
+      <i class="devicon-express-original tech-icon" title="Express.js"></i>
+      <i class="devicon-sqlite-plain tech-icon colored" title="SQLite3"></i>
+      <i class="devicon-git-plain tech-icon colored" title="Git"></i>
+      <i class="devicon-apache-line-wordmark tech-icon" title="Apache2"></i>
+      <i class="devicon-putty-plain tech-icon colored" title="PuTTY"></i>
+      <i class="devicon-linux-plain tech-icon colored" title="Linux"></i>
+      <i class="devicon-googlecloud-plain tech-icon colored" title="CloudShell"></i>
+    </div>
     </div>
   </section>
 
   <!-- Proyectos -->
   <section id="proyectos" class="bg-light py-5">
-    <div class="container">
+    <div class="container-fluid">
       <h2 class="mb-4 text-center link-success">Proyectos</h2>
       <div class="row justify-content-center">
         
-        <div class="col">
+        <div class="col col-lg-6 d-flex justify-content-center">
           <div class="card mb-4" style="width: 18rem;">
             <img src="img/PortadaLoto.jpeg" class="card-img-top" alt="Proyecto 1">
             <div class="card-body">
               <h5 class="card-title">Loto Indumentaria</h5>
               <p class="card-text">Tienda online de ropa que permite a los usuarios crear cuentas, explorar productos, gestionar su perfil y realizar compras de forma simple y segura. También incluye un panel administrativo con control total sobre los productos.</p>
+            </div>
+              <div class="card-footer">
+                
               <a href="https://github.com/Condebasura/Loto_Indumentaria.git" class="btn btn-dark btn-sm" target="_blank">GitHub</a>
               <a href="https://loto.hopto.org" class="btn btn-primary btn-sm" target="_blank">Ver Demo</a>
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col  col-lg-6 d-flex justify-content-center">
             <div class="card mb-4" style="width: 18rem;">
               <img src="img/PortadaSessions.jpeg" class="card-img-top" alt="Proyecto 1">
               <div class="card-body">
                 <h5 class="card-title">Sessions</h5>
                 <p class="card-text">Proyecto web que simula el manejo multiple de redes sociales en formato móvil, con funcionalidades completas de autenticación y perfil de usuario.</p>
+              </div>
+                
+              <div class="card-footer">
                 <a href="https://github.com/Condebasura/Login-Create.git" class="btn btn-dark btn-sm" target="_blank">GitHub</a>
                 <a href="https://sessions.hopto.org" class="btn btn-primary btn-sm" target="_blank">Ver Demo</a>
               </div>
