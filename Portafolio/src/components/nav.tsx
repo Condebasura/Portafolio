@@ -1,6 +1,7 @@
 type font = {
     url: string;
     className?: string;
+    target?: string;
 }
 type props = {
 Fonts : font[];
@@ -11,7 +12,7 @@ export default function Nav({ Fonts, className }: props) {
     return(
         <nav className={className}>
             {Fonts.map((font, index) => (
-                <a key={index} href={font.url} >
+                <a key={index} href={font.url} target={font.target} >
                     <i className={font.className}></i>
                 </a>
             ))}
