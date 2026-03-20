@@ -15,7 +15,7 @@ export default function Copy({text, className }: Props) {
   bottom: "-25px",
   left: "50%",
   transform: "translateX(-50%)",
-  background: "#094aab",
+  background: "#3981ee",
   color: "#fff",
   padding: "4px 8px",
   borderRadius: "4px",
@@ -42,7 +42,7 @@ export default function Copy({text, className }: Props) {
 
         <button className={className} onClick={CopyClipBoard}></button>
         {(hover || copied)&&(<span style={tooltipStyle}>
-            {copied ? "Copiado!" : "Copiar"}
+            {copied ? "Copiado!" : "Copiar Email"}
         </span>)}
         </div>
     )
