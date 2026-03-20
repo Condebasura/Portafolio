@@ -6,9 +6,10 @@ type font = {
 type props = {
 Fonts : font[];
 className?: string;
+children?: React.ReactNode;
 }
 
-export default function Nav({ Fonts, className }: props) {
+export default function Nav({ Fonts, className, children }: props) {
     return(
         <nav className={className}>
             {Fonts.map((font, index) => (
@@ -16,6 +17,7 @@ export default function Nav({ Fonts, className }: props) {
                     <i className={font.className}></i>
                 </a>
             ))}
+            {children}
         </nav>
     )
 }
