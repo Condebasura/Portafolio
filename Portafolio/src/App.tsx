@@ -2,6 +2,11 @@ import Nav from "./components/nav";
 import Copy from "./components/copy";
 import Seccion from "./components/seccion";
 import ImgProfile from "./assets/foto_perfil.jpg";
+import ImgConsult from "./assets/Consult-1.png";
+import ImgLoto from "./assets/PortadaLoto.jpeg";
+import ImgSesion from "./assets/PortadaSessions.jpeg";
+import Card from "./components/cards";
+import Button from "./components/button";
 
  function App() {
  return (
@@ -42,6 +47,21 @@ import ImgProfile from "./assets/foto_perfil.jpg";
       ]}
       />
     </div>
+    <div className="proyects ">
+
+    </div>
+    <Card tipo="Proyectos"
+    Photo={ImgConsult}
+    title="Management System for Medical Offices" description="A web application designed for managing appointments and clinical records in medical practices. The system allows for the administration of users, doctors, patients, appointments, and each patient's medical history within a local network."
+    tecnologies={[
+        { title: "HTML", className: "devicon-html5-plain colored text-4xl" },
+       { title: "CSS", className: "devicon-css3-plain colored text-4xl" },
+       { title: "JavaScript", className: "devicon-javascript-plain colored text-4xl" },
+       {title:"tipescript", className: "devicon-typescript-plain colored text-4xl"},
+    ]}
+    >
+  {<Button  name="GitHub" className="bg bg-blue-700  text-white m-2 p-2  ps-6 pe-6 rounded-xl" />}
+    </Card>
         </div>
  )
 }

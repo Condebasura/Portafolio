@@ -1,11 +1,11 @@
 type ButtonProps = {
     name: string;
-    onClick: () => void;
     className?: string;
+    url?: string;
 }
 
-export default function Button({name , onClick , className}: ButtonProps){
+export default function Button({name , className , url}: ButtonProps){
     return(
-        <button className={className} onClick={onClick}>{name}</button>
+        <button className={className} url={url} >{name}</button>
     )
 }
