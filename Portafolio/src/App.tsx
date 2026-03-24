@@ -55,12 +55,38 @@ import Button from "./components/button";
     title="Management System for Medical Offices" description="A web application designed for managing appointments and clinical records in medical practices. The system allows for the administration of users, doctors, patients, appointments, and each patient's medical history within a local network."
     tecnologies={[
         { title: "HTML", className: "devicon-html5-plain colored text-4xl" },
+        {title:"react", className: "devicon-react-original colored text-4xl"},
        { title: "CSS", className: "devicon-css3-plain colored text-4xl" },
+       {title:"tailwind", className: "devicon-tailwindcss-plain colored text-4xl"},
+       {title:"nodejs", className: "devicon-nodejs-plain colored text-4xl"},
+        {title:"express", className: "devicon-express-original colored text-4xl"},
+       {title:"sqlite", className: "devicon-sqlite-plain colored text-4xl"},
        { title: "JavaScript", className: "devicon-javascript-plain colored text-4xl" },
        {title:"tipescript", className: "devicon-typescript-plain colored text-4xl"},
     ]}
     >
-  {<Button  name="GitHub" className="bg bg-blue-700  text-white m-2 p-2  ps-6 pe-6 rounded-xl" />}
+  {<Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs px-3 py-2 text-center" url="https://github.com/Condebasura/Consultorio" target="_blank"/>}
+  
+    </Card>
+    <Card
+    Photo={ImgLoto}
+    title="Loto Clothing store"
+    description="This online clothing store allows users to create accounts, browse products, manage their profile, and make purchases simply and securely. It also includes an administrative panel with full control over the products."
+    
+    tecnologies={[
+       { title: "HTML", className: "devicon-html5-plain colored text-4xl" },
+       { title: "CSS", className: "devicon-css3-plain colored text-4xl" },
+       {title:"bootstrap", className: "devicon-bootstrap-plain colored text-4xl"},
+       { title: "JavaScript", className: "devicon-javascript-plain colored text-4xl" },
+       {title:"nodejs", className: "devicon-nodejs-plain colored text-4xl"},
+        {title:"express", className: "devicon-express-original colored text-4xl"},
+       {title:"sqlite", className: "devicon-sqlite-plain colored text-4xl"},
+
+    ]}
+    >
+       {<Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs px-3 py-2 text-center" url="https://github.com/Condebasura/Loto_Indumentaria" target="_blank"/>}
+
+       {<Button  name=" Demo" className="fa-solid fa-eye flex flex-row gap-1 text-white bg-gray-400 hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-300 ms-2 rounded-md text-xs px-3 py-2 text-center" url="https://loto-indumentaria.hopto.org" target="_blank"/>}
     </Card>
         </div>
  )
