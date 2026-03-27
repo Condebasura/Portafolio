@@ -9,20 +9,23 @@ type Content ={
     Photo: string;
     description: string;
     tecnologies: tecg[];
+    className?: string;
  children?: React.ReactNode;
 }
 
-export default function Card({title , tipo, Photo, description, tecnologies , children }: Content){
+export default function Card({title , Photo, description, tecnologies ,className, children }: Content){
 
     return(
         <>
-          <h1>{tipo}</h1>
-        <div>
-            <h2>{title}</h2>
-            <img src={Photo}className="size-64" alt="Photo"/>
-            <p>{description}</p>
+          
+        <div className={className} >
+            <h2 className=" text-xl m-2">{title}</h2>
+            <div className="grid grid-cols-2 ">
+            <img src={Photo}className="size-56" alt="Photo"/>
+            <div>
 
-            <div className="flex flex-row gap-4 m-4"> 
+            <p className="text-sm font-medium ">{description}</p>
+            <div className="flex flex-row gap-4 mt-4"> 
             {tecnologies.map((tecg , index)=>(
              
                 <span key={index} className={tecg.className} title={tecg.title}></span> 
@@ -30,6 +33,10 @@ export default function Card({title , tipo, Photo, description, tecnologies , ch
                 
             ))}
             </div>
+            </div>
+
+            </div>
+                
             {children}
         </div>
             </>

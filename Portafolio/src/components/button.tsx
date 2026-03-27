@@ -7,6 +7,9 @@ type ButtonProps = {
 
 export default function Button({name , className , url , target}: ButtonProps){
     return(
-      <button className={className}> <a  href={url} target={target} ></a> <p>{name}</p> </button>
+        <div className={className}>
+
+      <a  href={url} target={target} ></a> <button>{name}</button>
+        </div>
     )
 }

@@ -22,7 +22,7 @@ export default function Seccion({title , parraph , title_2 , className, imagen, 
             </div>
             {imagen && <img src={imagen} alt="Profile" className="rounded-lg size-56" />}
             {Fonts &&(
-                <div className="flex flex-row gap-4 m-4  ">
+                <div className="flex flex-row flex-wrap gap-4 m-4  ">
                     {Fonts.map((font , index) => (
                         <span key={index} className={font.className} title={font.title}>
                         </span>
