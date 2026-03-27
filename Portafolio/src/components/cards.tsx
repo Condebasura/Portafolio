@@ -20,12 +20,12 @@ export default function Card({title , Photo, description, tecnologies ,className
           
         <div className={className} >
             <h2 className=" text-xl m-2">{title}</h2>
-            <div className="grid grid-cols-2 ">
-            <img src={Photo}className="size-56" alt="Photo"/>
+            <div className="flex flex-col  md:grid md:grid-cols-2 gap-4">
+            <img src={Photo}className="sapect-3-2 object-cover" alt="Photo"/>
             <div>
 
-            <p className="text-sm font-medium ">{description}</p>
-            <div className="flex flex-row gap-4 mt-4"> 
+            <p className="text-xs md:text-sm font-medium ">{description}</p>
+            <div className="flex flex-row  flex-wrap gap-4 mt-4"> 
             {tecnologies.map((tecg , index)=>(
              
                 <span key={index} className={tecg.className} title={tecg.title}></span> 
