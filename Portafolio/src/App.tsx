@@ -24,7 +24,7 @@ import Button from "./components/button";
     </div>
 
      <div className="flex flex-row justify-center md:justify-end  md:p-2 ">
-      <Seccion title="Pablo César Zabala"parraph="Full-Stack Web Developer" className=" flex md:flex-row gap-4 flex-col text-center items-center  md:text-start w-full md:w-1/2  shadow-xl p-4 m-4 bg-gray-100 rounded-lg text-2x1  " title_2="I build full-stack applications, from backend to frontend." imagen={ImgProfile}/>
+      <Seccion title="Pablo César Zabala"parraph="Full-Stack Web Developer" className=" flex md:flex-row gap-4 flex-col text-center items-center  md:text-start w-full md:w-1/2  shadow-xl p-4 m-4 bg-gray-100 rounded-lg " title_2="I build full-stack applications, from backend to frontend." imagen={ImgProfile}/>
      </div>
     
     <div className=" flex flex-row justify-center md:justify-start">
@@ -75,7 +75,7 @@ import Button from "./components/button";
        {title:"tipescript", className: "devicon-typescript-plain colored text-4sm"},
     ]}
     >
-      <div className="flex flex-col justify-center md:flex-row  md:justify-end me-4 ">
+      <div className="flex  justify-center flex-row  md:justify-end me-4 ">
   {<Button  name=" GitHub" className="fa-brands fa-github flex  flex-row flex-wrap md:flex-nowrap m-2  ms-2 gap-1 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs md:text-sm  px-3 py-2  md:text-center  w-24" url="https://github.com/Condebasura/Consultorio" target="_blank"/>}
   
 </div>
@@ -102,7 +102,7 @@ import Button from "./components/button";
       
     ]}
     >
-      <div className="flex flex-col justify-center md:flex-row  md:justify-end me-4 ">
+      <div className="flex  justify-center flex-row  md:justify-end me-4 ">
 
        { <Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 m-2 text-white bg-blue-600  hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs md:text-sm  px-3 py-2 text-center ms-2 w-24" url="https://github.com/Condebasura/Loto_Indumentaria" target="_blank"/>}
 
@@ -131,7 +131,7 @@ import Button from "./components/button";
       
     ]}
     >
-      <div className="flex flex-col md:flex-row justify-center md:justify-end me-4">
+      <div className="flex  flex-row justify-center md:justify-end me-4">
 
        { <Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 m-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs md:text-sm px-3 py-2 text-center ms-2 w-24" url="https://github.com/Condebasura/Login-Create" target="_blank"/>}
 
