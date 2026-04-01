@@ -12,7 +12,7 @@ import Button from "./components/button";
  return (
   <div className="conteiner grid grid-cols-1 gap-2">
 
-    <div className=" Nav flex flex-row justify-end p-2  ">
+    <div className=" Nav flex flex-row justify-end p-2 sticky top-0 z-50 ">
       
       <Nav className="text-white flex flex-row  bg-gray-100 w-max h-8 rounded-lg items-center gap-4 me-2 px-4 shadow-xl" 
       Fonts={[{ url: "https://github.com/Condebasura", className: "fa-brands fa-github text-2xs text-gray-950", target: "_blank" },{
@@ -24,7 +24,7 @@ import Button from "./components/button";
     </div>
 
      <div className="flex flex-row justify-center md:justify-end p-2 ">
-      <Seccion title="Pablo César Zabala"parraph="Full-Stack Web Developer" className=" flex md:flex-row gap-4 flex-col text-center items-center  md:text-start  w-1/2  shadow-xl p-4 m-4 bg-gray-100 rounded-lg text-2x1  " title_2="I like to create complete projects, from the backend to the frontend" imagen={ImgProfile}/>
+      <Seccion title="Pablo César Zabala"parraph="Full-Stack Web Developer" className=" flex md:flex-row gap-4 flex-col text-center items-center  md:text-start  w-1/2  shadow-xl p-4 m-4 bg-gray-100 rounded-lg text-2x1  " title_2="I build full-stack applications, from backend to frontend." imagen={ImgProfile}/>
      </div>
     
     <div className=" flex flex-row justify-center md:justify-start">
@@ -50,11 +50,11 @@ import Button from "./components/button";
       ]}
       />
       </div>
-    <div className="flex flex-row justify-center ">
+    <div className="flex flex-row justify-center mt-4 mb-4  ">
 
-        <p className="text-2xl p-3 m-4 text-gray-950 underline decoration-sky-500">Projects</p>
+        <p className="text-3xl  p-3 m-4 text-gray-950 underline decoration-sky-500">Projects</p>
     </div>
-    <div className=" flex justify-center md:flex-row gap-4 md:justify-end p-2 ">
+    <div className=" flex justify-center md:flex-row gap-4  p-2 ">
       
       
         
@@ -75,16 +75,18 @@ import Button from "./components/button";
        {title:"tipescript", className: "devicon-typescript-plain colored text-4sm"},
     ]}
     >
+      <div className="flex flex-col justify-center md:flex-row  md:justify-end me-4 ">
   {<Button  name=" GitHub" className="fa-brands fa-github flex  flex-row flex-wrap md:flex-nowrap m-2  ms-2 gap-1 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs md:text-sm  px-3 py-2  md:text-center  w-24" url="https://github.com/Condebasura/Consultorio" target="_blank"/>}
   
+</div>
     </Card>
 
     </div>
 
-     <div className="flex justify-center md:flex-row md:justify-start">
+     <div className="flex justify-center md:flex-row mt-4">
 
     <Card
-    className="flex flex-col m-2 p-3  bg bg-gray-200 w-2/5  shadow-xl rounded-lg gap-4"
+    className="flex flex-col m-2 p-3  bg bg-gray-100 w-2/5  shadow-xl rounded-lg gap-4"
     Photo={ImgLoto}
     title="Loto Clothing store"
     description="This online clothing store allows users to create accounts, browse products, manage their profile, and make purchases simply and securely. It also includes an administrative panel with full control over the products."
@@ -100,7 +102,7 @@ import Button from "./components/button";
       
     ]}
     >
-      <div className="flex flex-col justify-center md:flex-row  md:justify-start ">
+      <div className="flex flex-col justify-center md:flex-row  md:justify-end me-4 ">
 
        { <Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 m-2 text-white bg-blue-600  hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs md:text-sm  px-3 py-2 text-center ms-2 w-24" url="https://github.com/Condebasura/Loto_Indumentaria" target="_blank"/>}
 
@@ -109,10 +111,10 @@ import Button from "./components/button";
     </Card>
     </div>
 
-    <div className=" flex justify-center md:flex-row gap-4 md:justify-end p-2">
+    <div className=" flex justify-center md:flex-row gap-4 mt-4 mb-4 p-2">
 
     <Card
-    className="flex flex-col m-2 p-3  bg bg-gray-200 w-2/5  shadow-xl rounded-lg gap-4"
+    className="flex flex-col m-2 p-3  bg bg-gray-100 w-2/5  shadow-xl rounded-lg gap-4"
     Photo={ImgSesion}
     title="Sessions Social Network"
     description="Web project that simulates the management of multiple social networks in mobile format, with complete authentication and user profile functionalities."
@@ -129,9 +131,9 @@ import Button from "./components/button";
       
     ]}
     >
-      <div className="flex flex-col md:flex-row justify-center md:justify-start">
+      <div className="flex flex-col md:flex-row justify-center md:justify-end me-4">
 
-       { <Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 m-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs px-3 py-2 text-center ms-2 w-24" url="https://github.com/Condebasura/Login-Create" target="_blank"/>}
+       { <Button  name=" GitHub" className="fa-brands fa-github flex flex-row gap-1 m-2 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-md text-xs md:text-sm px-3 py-2 text-center ms-2 w-24" url="https://github.com/Condebasura/Login-Create" target="_blank"/>}
 
        {<Button  name=" Demo" className="fa-solid fa-eye flex flex-row gap-1 m-2 text-white bg-gray-400 hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-300 ms-2 rounded-md text-xs md:text-sm  px-3 py-2 text-center w-24" url="https://sessions.hopto.org" target="_blank"/>}
       </div>
