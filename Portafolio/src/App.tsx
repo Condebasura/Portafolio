@@ -10,7 +10,7 @@ import Button from "./components/button";
 
  function App() {
  return (
-  <div className="conteiner grid grid-cols-1 gap-2">
+  <div className="conteiner grid grid-cols-1  gap-2">
 
     <div className=" Nav flex flex-row justify-end p-2 sticky top-0 z-50 ">
       
@@ -23,13 +23,13 @@ import Button from "./components/button";
       </Nav>
     </div>
 
-     <div className="flex flex-row justify-center md:justify-end p-2 ">
-      <Seccion title="Pablo César Zabala"parraph="Full-Stack Web Developer" className=" flex md:flex-row gap-4 flex-col text-center items-center  md:text-start  w-1/2  shadow-xl p-4 m-4 bg-gray-100 rounded-lg text-2x1  " title_2="I build full-stack applications, from backend to frontend." imagen={ImgProfile}/>
+     <div className="flex flex-row justify-center md:justify-end  md:p-2 ">
+      <Seccion title="Pablo César Zabala"parraph="Full-Stack Web Developer" className=" flex md:flex-row gap-4 flex-col text-center items-center  md:text-start w-full md:w-1/2  shadow-xl p-4 m-4 bg-gray-100 rounded-lg text-2x1  " title_2="I build full-stack applications, from backend to frontend." imagen={ImgProfile}/>
      </div>
     
     <div className=" flex flex-row justify-center md:justify-start">
 
-      <Seccion title="About Me" className="About-Me bg-gray-100  shadow-xl wrap-anywhere rounded-lg flex flex-col w-1/2  gap-4 m-4 p-4 " parraph="I'm a developer with experience in HTML, CSS, Bootstrap, Tailwind, JavaScript, Node.js, Express, SQLite, and Git. I'm currently expanding my knowledge of React, Electron, TypeScript, cloud services, working with instances from CloudShell and PuTTY, as well as tools like Apache2 and Linux environments . I am a passionate  with a strong background in both frontend and backend development. I enjoy creating complete projects that encompass all aspects of web development, from designing user interfaces to implementing server-side logic. With a keen eye for detail and a commitment to delivering high-quality work, I strive to build seamless and efficient web applications that provide an exceptional user experience." 
+      <Seccion title="About Me" className="About-Me bg-gray-100  shadow-xl wrap-anywhere rounded-lg flex flex-col w-full md:w-1/2  gap-4 m-4 p-4 " parraph="I'm a developer with experience in HTML, CSS, Bootstrap, Tailwind, JavaScript, Node.js, Express, SQLite, and Git. I'm currently expanding my knowledge of React, Electron, TypeScript, cloud services, working with instances from CloudShell and PuTTY, as well as tools like Apache2 and Linux environments . I am a passionate  with a strong background in both frontend and backend development. I enjoy creating complete projects that encompass all aspects of web development, from designing user interfaces to implementing server-side logic. With a keen eye for detail and a commitment to delivering high-quality work, I strive to build seamless and efficient web applications that provide an exceptional user experience." 
       title_2="technologies I use" Fonts={[
         { title: "HTML", className: "devicon-html5-plain colored md:text-4xl" },
         { title: "CSS", className: "devicon-css3-plain colored md:text-4xl" },
@@ -54,13 +54,13 @@ import Button from "./components/button";
 
         <p className="text-3xl  p-3 m-4 text-gray-950 underline decoration-sky-500">Projects</p>
     </div>
-    <div className=" flex justify-center md:flex-row gap-4  p-2 ">
+    <div className=" flex justify-center md:flex-row gap-4   p-2 ">
       
       
         
      
     <Card tipo="Proyectos"
-    className="flex flex-col m-2  p-3 bg bg-gray-100 w-2/5  shadow-xl rounded-lg gap-4"
+    className="flex flex-col m-2  p-3 bg bg-gray-100 w-full md:w-1/2  shadow-xl rounded-lg gap-4"
     Photo={ImgConsult}
     title="Management System for Medical Offices" description="A web application designed for managing appointments and clinical records in medical practices. The system allows for the administration of users, doctors, patients, appointments, and each patient's medical history within a local network."
     tecnologies={[
@@ -86,7 +86,7 @@ import Button from "./components/button";
      <div className="flex justify-center md:flex-row mt-4">
 
     <Card
-    className="flex flex-col m-2 p-3  bg bg-gray-100 w-2/5  shadow-xl rounded-lg gap-4"
+    className="flex flex-col m-2 p-3  bg bg-gray-100 w-full md:w-1/2  shadow-xl rounded-lg gap-4"
     Photo={ImgLoto}
     title="Loto Clothing store"
     description="This online clothing store allows users to create accounts, browse products, manage their profile, and make purchases simply and securely. It also includes an administrative panel with full control over the products."
@@ -114,7 +114,7 @@ import Button from "./components/button";
     <div className=" flex justify-center md:flex-row gap-4 mt-4 mb-4 p-2">
 
     <Card
-    className="flex flex-col m-2 p-3  bg bg-gray-100 w-2/5  shadow-xl rounded-lg gap-4"
+    className="flex flex-col m-2 p-3  bg bg-gray-100 w-full md:w-1/2  shadow-xl rounded-lg gap-4"
     Photo={ImgSesion}
     title="Sessions Social Network"
     description="Web project that simulates the management of multiple social networks in mobile format, with complete authentication and user profile functionalities."
